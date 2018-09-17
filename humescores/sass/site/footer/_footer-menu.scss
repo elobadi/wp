@@ -1,0 +1,47 @@
+.social-menu {
+  ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+
+
+    li:hover > ul,
+    li.focus > ul {
+      left: auto;
+    }
+  }
+
+  li {
+    position: relative;
+  }
+
+  a {
+    display: inline-block;
+    width: 100%;
+    padding: .5em 1em .5em 0;
+    text-decoration: none;
+    color: #fff;
+  }
+
+  a:hover,
+  a:focus {
+    text-decoration: underline;
+  }
+
+  .current_page_item > a,
+  .current-menu-item > a,
+  .current_page_ancestor > a,
+  .current-menu-ancestor > a {
+  }
+
+  .menu-item-has-children,
+  .page-item-has-children {
+    min-width: 218px;
+  }
+  .menu-item-has-children > a,
+  .page_item_has_children > a {
+    padding-right: 2em;
+  }
+}
